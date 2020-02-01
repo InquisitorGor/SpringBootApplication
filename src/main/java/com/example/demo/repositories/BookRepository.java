@@ -1,4 +1,8 @@
 package com.example.demo.repositories;
 
-public interface BookRepository {
+import com.example.demo.model.Book;
+import org.springframework.data.repository.CrudRepository;
+
+public interface BookRepository extends CrudRepository<Book,Long> {
+
 }
